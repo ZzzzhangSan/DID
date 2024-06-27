@@ -1,6 +1,6 @@
 <template>
   <div style="margin-bottom: 30px;">
-    <div style="height: 400px;">
+    <div style="height: 400px;margin: 0 auto;">
       <el-carousel>
         <el-carousel-item v-for="item in imageUrl" :key="item.url">
           <img :src="item.url" alt="" />
@@ -11,7 +11,9 @@
       <div>
         <div class="left" v-for="(item, idx) in maincontent" :key="idx">
           <div class="news-normal-title">
-            <p class="normal-title"><i>xxxxx</i> {{ item['title'] }}</p>
+            <p class="normal-title">
+            <!-- <i>xxxxx</i>  -->
+            {{ item['title'] }}</p>
           </div>
           <div class="newsList">
             <ul class="news-normal">
@@ -79,13 +81,16 @@ export default {
           content: [
             { content: 'DID app', href: '#' },
             // { content: 'DID 浏览器插件（个人和企业用户）', href: '#' },
-            { content: 'DID 操作台', href: '#' },
+            { content: 'DID 管理台', href: '#' },
           ]
         },
         jishuwendang: {
           title: '技术文档',
           content: [
-            { content: 'API接口文档', href: '/#/news?content=API接口文档' },
+            { content: 'DID 管理台接口文档', href: '/#/news?content=DID 管理台接口文档' },
+            { content: 'DID 管理台部署文档', href: '/#/news?content=DID 管理台部署文档' },
+            { content: 'SDK API文档', href: '/#/news?content=SDK API文档' },
+            { content: '签发机构接口协议', href: '/#/news?content=签发机构接口协议' },
           ]
         },
         biaozhunguifan: {
@@ -145,7 +150,9 @@ export default {
   margin: 0;
   text-align: center;
 }
-
+.el-carousel__item{
+  text-align: center;
+}
 .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }

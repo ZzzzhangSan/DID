@@ -2,12 +2,12 @@
     <div class="footer_container">
         <div class="footer_content">
             <p>
-                <span>中央网络安全和信息化委员会办公室</span>
-                <span>中华人民共和国国家互联网信息办公室 © 版权所有</span>
+                <!-- <span>中央网络安全和信息化委员会办公室</span> -->
+                <span>国家互联网应急中心 © 版权所有</span>
                 <a href="">联系我们</a>
             </p>
             <p>
-                <span>承办：国家互联网应急中心　技术支持：长安通信科技有限责任公司　</span>
+                <span>技术支持：长安通信科技有限责任公司　</span>
                 <a href="">京ICP备14042428号</a>
                 <a href=""><i class="gwa"></i>京公网安备11040102700108号</a>
             </p>
